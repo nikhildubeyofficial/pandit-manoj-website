@@ -1,0 +1,1709 @@
+	/*LINK FONTS
+	font-family: Montserrat, sans-serif;
+	*/
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	}
+
+.container{
+	max-width: 1140px;
+	width:100%;
+	margin:0 auto;
+	padding:0 15px;
+	}
+h1{
+	color: var(--white);
+	font-size: 64px;
+	font-weight: 500;
+	font-style:normal;
+	line-height: 76px;
+	max-width: 52%;
+    text-align: center;
+    margin: 0 auto;
+	text-transform: capitalize;
+	}
+h2{
+	color: var(--text-color, #180807);
+	font-family: Montserrat;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: capitalize;
+	}
+h4{
+	color: var(--text-color, #180807);
+	text-align: center;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 110% ;
+
+}
+h5{
+	color: var(--white);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.5% ;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+	}
+h6{
+	color: rgba(255, 255, 255, 0.81);
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 2.66px;
+	text-transform: uppercase;
+	}
+
+.section-pre-title > h6 {
+	color: rgba(24, 8, 7, 0.37);
+	text-align: left;
+}
+
+body{
+	color: var(--black);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 137.5%;
+	font-family: Montserrat, sans-serif;
+	}
+ 
+a{
+	display:inline-block;
+	text-decoration:none;
+	transition: all 0.4s linear;
+	}
+
+/*     a:hover ,  a:active {
+	background-color:# ;
+	color:# ;
+	}
+*/
+
+ul{
+	list-style:none;
+	}
+img{
+	width:auto;
+	height:auto;
+	max-width:100%;
+	display: block;
+	}
+.flex{
+	display:flex;
+	flex-wrap:wrap;
+	}
+.width50{
+	width:50%;
+	}
+.width33{
+	width:33.33%;
+	}
+.width25{
+    width: 25%;
+}
+:root{
+	--black : #180807;
+	--red : #B92925;
+	--yellow:#E9983F;
+	--white:#FFF;
+}
+
+				/*HEADER SECTION  CSS : START*/
+.header-row {
+    justify-content: space-between;
+}
+.header-col-1 {
+    width: 20%;
+}
+
+.header-col-2 {
+	width: 56%;
+}
+.header-col-2 .navbar > ul {
+    position: relative;
+    display: flex;
+    gap: 45px;
+	justify-content: center;
+}
+
+.header-col-2 .navbar > ul > li {
+    display: inline;
+}
+
+.header-col-2 .navbar > ul > li > a {
+    color: var(--black);
+    text-transform: capitalize;
+    padding: 42px 0;
+    transition: all 0.3s linear;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+i.fa.fa-chevron-down {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.header-col-1 > logo > a {
+    padding: 17px 0;
+}
+
+.header-col-2 .navbar > ul > li > a:hover {
+    color: var(--red);
+}
+
+.header-col-3 {
+    background: var(--yellow);
+    cursor: pointer;
+	width: 24%;
+}
+
+.whatsapp-row {
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.whatsapp-text {
+    margin: 0 11px;
+    color: white;
+}
+
+.whatsappicon > img {
+    margin: 0 12px;
+}
+
+.whatsapp-text > h3 {
+	margin-top: 6px;
+}
+
+.logo > a {
+    padding: 17px 0;
+}
+				/*HEADER SECTION  CSS : END*/
+				/*BANNER SECTION  CSS : START*/
+.banner-text {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 593px;
+    z-index: 20;
+    position: relative;
+}
+
+.banner-btn > a {
+    color: var(--yellow);
+	background: #FFF;
+    padding: 12px 20px;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: capitalize;
+}
+
+section.banner:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 21, 21, 0.54);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+section.banner {
+    position: relative;
+}
+
+.banner-subtitle p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px; /* 150% */
+    max-width: 55%;
+    margin: 20px auto 30px auto;
+}
+
+.banner-pre-title {
+    margin-bottom: 8px;
+}
+.banner-btn > a > .fa-long-arrow-right {
+    margin-left: 30px;
+	transition: all 0.4s linear;
+}
+
+.banner-btn > a > .fa-phone {
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+.banner-btn > a:hover {
+    background: var(--yellow);
+    color: var(--white);
+	padding: 12px 18px;
+}
+.banner-btn > a:hover > .fa-long-arrow-right {
+    margin-left: 40px;
+}
+	
+				/*BANNER SECTION  CSS : END*/
+
+				/*ACHARYA SECTION  CSS : START*/
+section.acharya {
+    margin: 100px 0;
+}
+
+.acharya-row {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 -61px;
+}
+
+.acharya-row .width50 {
+    width: calc(50% - 122px);
+    margin: 0 61px;
+}
+
+.acharya-col-2-title {
+    margin: 16px 0;
+    border-left: 4px solid var(--yellow);
+    padding-left: 24px;
+}
+
+.acharya-col-2-paragraph {
+    width: 555px;
+    margin-bottom: 40px;
+}
+
+.yellow-btn > a {
+    background: var(--yellow);
+    color: var(--white);
+    padding: 12px 18px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.yellow-btn > a > .fa-phone {
+    margin-right: 10px;
+    font-weight: bolder;
+	position: relative;
+}
+
+.yellow-btn > a > .fa-long-arrow-right {
+    margin-left: 16px;
+	position: relative;
+	transition: all 0.4s linear;
+}
+
+.yellow-btn > a:hover {
+    background: var(--red);
+}
+
+.yellow-btn > a:hover > .fa-long-arrow-right {
+    transform: translateX(14px);
+	padding-right: 18px;
+}
+
+				/*ACHARYA SECTION  CSS : END*/
+				/* POOJA SECTION : START */
+.pooja-row {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -53px;
+}
+
+.pooja-row .width50 {
+    width: calc(50% - 106px);
+    margin: 0 53px;
+}
+
+section.pooja {
+    padding: 103px 0;
+    background: #F2EBE3;
+}
+
+.pooja-tile {
+    margin: 16px 0 18px 0;
+    max-width: 50%;
+}
+
+
+.pooja-sub-row {
+    margin: 40px 0px;
+}
+
+.list-icon {
+    background: var(--yellow);
+    margin: 7px 17px 7px 0;
+}
+
+.list-icon > img {
+    padding: 4px;
+}
+.pooja-sub-row-col-2 {
+    width: 87%;
+}
+
+.pooja-sub-row {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pooja-col-2 img {
+    margin: 0 0 0 auto;
+}
+
+
+				/* POOJA SECTION  CSS: END */
+				/* CARTS SECTION CSS : START */
+section.carts {
+    margin: 95px 0 100px 0;
+}
+
+.carts-pre-title > h6 {
+    text-align: center;
+    color: rgba(24, 8, 7, 0.37);
+}
+
+.carts-title {
+    text-align: center;
+    max-width: 38%;
+    margin: 16px auto 58px auto;
+}
+
+.carts-row {
+    justify-content: space-between;
+    align-items: center;
+}
+.carts-row .width33 {
+    width: calc(33.33% - 20px);
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.08);
+	border-radius: 5px;
+}
+
+.carts-img > img {
+    border-radius: 5px;
+}
+
+.carts-heading > h4 {
+    margin: 21px 0 16px 0;
+    text-transform: capitalize;
+}
+
+.carts-sub-heading > p {margin-bottom: 25px;text-align: center;}
+
+.carts-btn {
+    text-align: center;
+    margin-bottom: 27px;
+}
+				/* CARTS SECTION CSS : END */
+
+				/* BOOK SECTION CSS : START */
+.book-text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 305px;
+	position: relative;
+	z-index: 20;
+}
+
+.book-pre-title > h6 {
+    color: rgba(255, 255, 255, 0.81);
+}
+
+.book-title > h2 {
+    color: var(--white);
+    margin: 16px 0 35px 0;
+}
+section.book::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.41);
+    z-index: 1;
+}
+
+section.book {
+    position: relative;
+}
+
+				/* BOOK SECTION CSS : END */
+				/* CONTECT SECTION  CSS : START */
+section.contact {padding: 100px 0;background: #F2EBE3;}
+
+.contact-row {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-pre-title > h6 {
+    color: rgba(24, 8, 7, 0.37);
+    text-align: justify;
+}
+
+.contact-title {
+    max-width: 86%;
+    margin: 16px 0 30px 0;
+    border-left: 4px solid var(--yellow);
+    padding-left: 17px;
+}
+
+ul.contect-list > li {
+    margin-bottom: 14px;
+}
+
+        /* FORM CSS : START */
+input , textarea {
+    width: 555px;
+    margin: 12.5px 0;
+    border: 1px solid rgba(24, 8, 7, 0.11);
+    border-radius: 5px;
+
+}
+input:focus-visible , textarea:focus-visible {
+    outline: 2px solid var(--yellow);
+}
+
+input[placeholder] , textarea[placeholder] {
+    padding: 14px;
+    color: #6A6A6A;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+input[placeholder="City"] , input[placeholder="State"] {
+    width: 47.3%;
+}
+
+input[placeholder="State"] {float: right;}
+        /* FORM CSS : END */
+
+
+				/* CONTECT SECTION CSS: END */
+                /* FOOTER SECTION CSS : START */
+footer {
+    background: var(--black);
+}
+
+.footer-row {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 0;
+}
+
+.footer-col-1-paragraph {
+    color: var(--white);
+    margin-bottom: 28px;
+    max-width: 293px;
+}
+
+ul.footer-col-1-social > li {
+    display: inline-block;
+}
+
+ul.footer-col-1-social > li > a > i {
+    color: var(--white);
+    transition: all 0.4s linear;
+}
+
+ul.footer-col-1-social > li > a {
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+ul.footer-col-1-social {
+    margin: 0 -10px;
+}
+
+ul.footer-col-2-list > li > a {
+    color: var(--white);
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+ul.footer-col-1-social > li > a:hover > i {
+    color: var(--yellow);
+}
+
+ul.footer-col-2-list > li > a:hover {
+    color: var(--yellow);
+}
+
+.footer-col-3-paragraph > p {
+    color: white;
+    line-height: 40px;
+    letter-spacing: 0.32px;
+}
+
+.footer-col-4-subtilte , .footer-col-4-subtilte>a {
+    color: white;
+    line-height: 40px; /* 250% */
+    letter-spacing: 0.32px;
+}
+
+.footer-col-4-subtilte > a:hover {
+    color: var(--yellow);
+}
+
+.footer-col-3-paragraph > p {
+    max-width: 266px;
+}
+
+
+.footer-row .footer-col-1 {
+    width: 25%;
+    margin-right: 57px;
+}
+
+.footer-col-2 {
+    width: 11%;
+    margin-right: 85px;
+}
+
+.footer-col-3 {
+    width: 24%;
+    margin-right: 57px;
+}
+
+.footer-col-4 {
+    width: 22%;
+}
+
+.footer-second-row > p {
+    color: rgba(255, 255, 255, 0.53);
+    text-align: -webkit-center;
+    padding: 14px 0 21px 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+}
+                /* FOOTER SECTION CSS : END */
+
+                                    /* MEDIA QUERY : START */
+												
+		/*view in 1024*/						
+@media(max-width:1199px){
+        .container {
+            max-width: 1024px;
+        }
+        /* header-media */
+        .header-col-3 {
+            display: flex;
+            align-items: center;
+        }
+        
+        .whatsapp-row {
+            padding: 25px 0;
+        }
+        
+        .whatsappicon > img {
+            margin: 0 4px;
+        }
+        
+        .whatsapp-text {
+            margin: 0 4px;
+        }
+        .container {
+            max-width: 1024px;
+        }
+        
+        h1 {
+            font-size: 57px;
+            line-height: 71px;
+        }
+        
+        h6 {
+            font-size: 13px;
+            letter-spacing: 2.50px;
+        }
+        
+        .banner-subtitle p {
+            line-height: 26px;
+            font-size: 17px;
+            margin: 17px auto 28px auto;
+        }
+        
+        .banner-text {
+            height: 560px;
+        }
+        
+        section.acharya {
+            margin: 85px 0;
+        }
+        
+        .acharya-row {
+            margin: 0;
+        }
+        
+        .acharya-row .width50 {
+            width: 50%;
+            margin: 0;
+        }
+        
+        h2 {
+            font-size: 28px;
+        }
+        
+        .acharya-col-2-title {
+            margin: 13px 0;
+            border-left: 3px solid var(--yellow);
+            padding-left: 19px;
+        }
+        
+        .acharya-col-2-paragraph {
+            width: 483px;
+            margin-bottom: 40px;
+        }
+        
+        .yellow-btn > a {
+            padding: 10px 16px;
+            font-size: 15px;
+        }
+        
+        section.pooja {
+            padding: 85px 0;
+        }
+        
+        .pooja-row {
+            margin: 0;
+        }
+        
+        .acharya-col-2-inner {padding-left: 30px;}
+        
+        .pooja-row .width50 {
+            width: 50%;
+            margin: 0;
+        }
+        
+        .pooja-tile {
+            margin: 13px 0 16px 0;
+        }
+        
+        body {
+            font-size: 15px;
+            line-height: 130%;
+        }
+        
+        .pooja-sub-row {
+            margin: 32px 0px;
+        }
+        
+        .list-icon {
+            margin: 5px 12px 5px 0;
+        }
+        
+        .carts-title {
+            margin: 14px auto 50px auto;
+        }
+        
+        section.carts {
+            margin: 77px 0 72px 0;
+        }
+        
+        h4 {
+            font-size: 16px;
+            line-height: 95%;
+        }
+        
+        .carts-heading > h4 {
+            margin: 18px 0 13px 0;
+        }
+        
+        .carts-sub-heading > p {
+            margin-bottom: 21px;
+        }
+        
+        .carts-btn {
+            margin-bottom: 22px;
+        }
+        
+        .book-text {
+            height: 290px;
+        }
+        
+        .banner-btn > a {
+            font-size: 14px;
+            padding: 9px 17px;
+        }
+        
+        section.contact {
+            padding: 70px 0;
+        }
+        
+        ul.contect-list > li {
+            margin-bottom: 11px;
+        }
+        
+        input[placeholder], textarea[placeholder] {
+            font-size: 12px;
+            padding: 12px;
+        }
+        
+        input, textarea {
+            width: 497px;
+            margin: 9.5px 0;
+        }
+        
+        h5 {
+            font-size: 13px;
+            line-height: 130.5%;
+            letter-spacing: 0.22px;
+            margin-bottom: 13px;
+        }
+        
+        .footer-row {
+            padding: 60px 0;
+        }
+        
+        .footer-row .footer-col-1 {
+            margin-right: 37px;
+        }
+        
+        .footer-col-1-paragraph {
+            margin-bottom: 25px;
+        }
+        
+        .footer-col-2 {
+            margin-right: 65px;
+        }
+        
+        .footer-col-4-subtilte, .footer-col-4-subtilte>a {
+            line-height: 32px;
+            letter-spacing: 0.10px;
+        }
+        
+        .footer-col-3 {
+            margin-right: 36px;
+        }
+}
+        /*view in 768px*/
+@media (max-width:1023px){
+
+    /* HEADER SECTION : START*/
+
+.header-col-2 .navbar > ul > li > a {
+    padding: 32px 0;
+    font-size: 13px;
+}
+
+.header-col-2 .navbar > ul {
+    gap: 33px;
+}
+
+.whatsapp-row {
+    padding: 0px 0;
+}
+
+.whatsappicon > img {
+    margin: 0 3px;
+    width: 25px;
+}
+
+.whatsapp-text {
+    margin: 0 10px;
+}
+
+.whatsapp-text > h3 {
+    margin-top: 2px;
+    font-size: 13px;
+}
+
+.whatsapp-text > p {
+    font-size: 12px;
+}
+    /* HEADER SECTION : END */
+
+
+    .banner-text {
+        height: 400px;
+    }
+    
+    h6 {
+        font-size: 10px;
+        letter-spacing: 1.50px;
+    }
+    
+    .banner-pre-title {
+        margin-bottom: 3px;
+    }
+    
+    h1 {
+        font-size: 41px;
+        line-height: 55px;
+    }
+    
+    .banner-subtitle p {
+        line-height: 23px;
+        font-size: 15px;
+        margin: 13px auto 22px auto;
+    }
+    
+    .banner-btn > a {
+        font-size: 12px;
+        padding: 7px 11px;
+    }
+    
+    section.acharya {
+        margin: 40px 0;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    body {
+        font-size: 14px;
+        line-height: 125%;
+    }
+    
+    .acharya-col-2-title {
+        margin: 11px 0;
+        border-left: 2px solid var(--yellow);
+        padding-left: 17px;
+    }
+    
+    .acharya-col-2-paragraph {
+        width: 336px;
+        margin-bottom: 30px;
+    }
+    
+    .yellow-btn > a {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+    
+    section.pooja {
+        padding: 45px 0;
+    }
+    
+    .pooja-tile {
+        margin: 10px 0 13px 0;
+    }
+    
+    .pooja-sub-row {
+        margin: 20px 0px;
+    }
+    
+    .list-icon > img {
+        padding: 1px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .list-icon {
+        margin: 3px 7px 3px 0;
+    }
+    
+    .pooja-paragraph {
+        max-width: 333px;
+    }
+    .carts-heading > h4 {
+        margin: 14px 0 11px 0;
+    }
+    
+    h4 {
+        font-size: 15px;
+        line-height: 89%;
+    }
+    
+    .carts-sub-heading > p {
+        margin-bottom: 15px;
+    }
+    
+    section.carts {
+        margin: 50px 0 50px
+     0;
+    }
+    
+    .book-text {
+        height: 250px;
+    }
+    
+    section.contact {
+        padding: 50px 0;
+    }
+    
+    .contact-title {
+        margin: 11px 0 18px 0;
+        border-left: 3px solid var(--yellow);
+        padding-left: 17px;
+    }
+    
+    ul.contect-list > li {
+        margin-bottom: 8px;
+    }
+    
+    input[placeholder], textarea[placeholder] {
+        font-size: 10px;
+        padding: 10px;
+    }
+    
+    input, textarea {
+        width: 369px;
+        margin: 6.5px 0;
+    }
+    
+    input[placeholder="City"], input[placeholder="State"] {
+        width: 47.3%;
+    }
+    
+    .footer-row {
+        padding: 44px 0;
+    }
+    
+    .footer-row .footer-col-1 {
+        margin-right: 23px;
+    }
+    
+    h5 {
+        font-size: 11px;
+        line-height: 115.5%;
+        letter-spacing: 0.22px;
+        margin-bottom: 9px;
+    }
+    
+    .footer-col-1-paragraph {
+        margin-bottom: 18px;
+    }
+    
+    .footer-col-3-paragraph > p {
+        line-height: 27px;
+        letter-spacing: 0.32px;
+    }
+    
+    .footer-col-2 {
+        margin-right: 45px;
+    }
+    
+    .footer-col-3 {
+        margin-right: 20px;
+    }
+}
+        /*view in 576px*/
+@media (max-width:767px){
+
+
+        /* MOBILE MENU DESINE : START */
+        
+        header.header {
+            position: sticky;
+            background: white;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-col-2 .navbar > ul {
+            position: absolute;
+            right: 0px;
+            background: white;
+            top: 100%;
+            width: 40%;
+            text-align: center;
+            display: none;
+        }
+        
+        .header-col-2 .navbar > ul > li {
+            display: block;
+            margin: 7px 0;
+        }
+        
+        .header-col-2 .navbar > ul > li > a {
+            padding: 15px 20px;
+            width: 100%;
+        }
+        
+        .header-col-2 .navbar > ul > li > a:hover {
+            background: var(--yellow);
+        }
+        
+                /* MOBILE MENU DESINE : END */
+
+
+
+
+
+    h1 {
+        font-size: 32px;
+        line-height: 45px;
+    }
+    
+    .banner-subtitle p {
+        line-height: 19px;
+        font-size: 12px;
+        margin: 9px auto 16px auto;
+    }
+    
+    .banner-btn > a {
+        font-size: 10px;
+        padding: 7px 9px;
+    }
+    
+    .banner-btn > a > .fa-phone {
+        margin-right: 3px;
+    }
+    
+    .banner-btn > a > .fa-long-arrow-right {
+        margin-left: 10px;
+    }
+    
+    section.acharya {
+        margin: 20px 0;
+    }
+    
+    .acharya-row .width50 {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .container {
+        max-width: 576px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .acharya-col-2-title {
+        margin: 9px 0;
+        border-left: 2px solid var(--yellow);
+        padding-left: 11px;
+    }
+    
+    .acharya-col-2-paragraph {
+        margin-bottom: 25px;
+        width: 429px;
+    }
+    
+    .yellow-btn > a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .yellow-btn > a > .fa-phone {
+        margin-right: 4px;
+    }
+    
+    .yellow-btn > a > .fa-long-arrow-right {
+        margin-left: 10px;
+    }
+    
+    section.pooja {
+        padding: 26px 0;
+    }
+    
+    .pooja-row .width50 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .pooja-tile {
+        margin: 8px 0 8px 0;
+        max-width: 195px;
+    }
+    
+    .pooja-sub-row-col-2 {
+        width: 94%;
+    }
+    
+    .list-icon {
+        margin: 4px 8px 5px 0;
+    }
+    
+    .pooja-sub-row {
+        margin: 13px 0px;
+    }
+    
+    .pooja-col-2 img {
+        margin: 0 auto;
+    }
+    
+    
+    section.carts {
+        margin: 25px 0 25px 0;
+    }
+    
+    .carts-title {
+        margin: 7px auto 29px auto;
+        max-width: 247px;
+    }
+    
+    .carts-row .width33 {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    
+    .carts-heading > h4 {
+        margin: 9px 0 8px 0;
+    }
+    
+    .carts-sub-heading > p {
+        margin-bottom: 8px;
+    }
+    
+    .banner-text {
+        height: 346px;
+    }
+    
+    .book-title > h2 {
+        margin: 10px 0 28px 0;
+    }
+    
+    .book-text {
+        height: 200px;
+    }
+    
+    section.contact {
+        padding: 30px 0;
+    }
+    
+    .contact-row  > .width50 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .contact-title {
+        margin: 9px 0 13px 0;
+        border-left: 2px solid var(--yellow);
+        padding-left: 12px;
+        max-width: 245px;
+    }
+    
+    input[placeholder], textarea[placeholder] {
+        font-size: 8px;
+        padding: 7px;
+    }
+    
+    input, textarea {
+        width: 347px;
+        margin: 4.5px 0;
+    }
+    
+    input[placeholder="City"], input[placeholder="State"] {
+        width: 29.3%;
+    }
+    
+    input[placeholder="State"] {
+        float: none;
+        margin-left: 25px;
+    }
+    
+    form {text-align: center;}
+    
+    .contact-col-1-inner {padding-left: 104px;}
+    
+    .footer-row {
+        padding: 25px 0;
+    }
+    
+    .footer-row > .width25 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .footer-row .footer-col-1 {
+        margin-right: 0px;
+    }
+    
+    .footer-col-2 {
+        margin-right: 0px;
+    }
+    
+    .footer-col-3 {
+        margin-right: 0px;
+    }
+    
+    h5 {
+        font-size: 10px;
+        line-height: 101.5%;
+        letter-spacing: 0.22px;
+        margin-bottom: 9px;
+    }
+    
+    ul.footer-col-2-list > li > a {
+        padding: 4px 0;
+    }
+    
+    ul.footer-col-1-social > li > a {
+        padding: 0 4px;
+        margin: 0px 3px;
+    }
+    
+    .footer-col-3-paragraph > p {
+        line-height: 23px;
+        letter-spacing: 0.32px;
+    }
+    
+    .footer-col-4-subtilte, .footer-col-4-subtilte>a {
+        line-height: 26px;
+        letter-spacing: 0.10px;
+    }
+    
+    body {
+        font-size: 11px;
+    }
+    
+    .pooja-col-1-inner {
+        padding-left: 34px;
+    }
+
+    .header-col-3 {display: none;}
+}
+        /*view in 425px*/
+@media (max-width:575px){
+
+    input[placeholder="City"], input[placeholder="State"] {width: 46.3%;}
+    
+    .contact-col-1-inner {
+        padding-left: 5px;
+    }
+.container {
+    max-width: 425px;
+}
+
+.banner-text {
+    height: 270px;
+}
+
+h6 {font-size: 7px;letter-spacing: 1.5px;}
+
+h1 {
+    font-size: 23px;
+    line-height: 34px;
+}
+
+.banner-subtitle p {
+    line-height: 21px;
+    font-size: 9px;
+    margin: 10px auto 17px auto;
+}
+
+.banner-btn > a {
+    font-size: 9px;
+    padding: 5px 4px;
+}
+
+section.acharya {
+    margin: 25px 0;
+}
+
+.acharya-row .width50 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.acharya-col-2-paragraph {
+    width: 320px;
+    margin-bottom: 22px;
+}
+
+body {
+    font-size: 12px;
+}
+
+.yellow-btn > a {
+    padding: 6px 10px;
+    font-size: 11px;
+}
+
+section.pooja {
+    padding: 30px 0;
+}
+
+.pooja-row .width50 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+section.carts {
+    margin: 36px 0 25px 0;
+}
+
+.carts-title {
+    margin: 6px auto 25px auto;
+}
+
+.carts-row .width33 {
+    width: calc(49% - 15px);
+    margin-bottom: 20px;
+}
+
+.carts-heading > h4 {
+    margin: 14px 0 10px 0;
+}
+
+h4 {
+    font-size: 14px;
+    line-height: 84%;
+}
+
+.carts-sub-heading > p {
+    margin-bottom: 14px;
+}
+
+.book-text {
+    height: 170px;
+}
+
+.book-title > h2 {
+    margin: 12px 0 22px 0;
+    text-align: center;
+}
+
+section.contact {
+    padding: 30px 0;
+}
+
+.contact-row > .width50 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input[placeholder], textarea[placeholder] {
+    font-size: 10px;
+    padding: 9px;
+}
+
+input, textarea {
+    width: 395px;
+    margin: 5.5px 0;
+}
+
+.footer-row {
+    padding: 35px 0;
+}
+
+.footer-row > .width25 {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.footer-row .footer-col-1 {
+    margin-right: 0px;
+}
+
+.footer-col-2 {
+    margin-right: 0px;
+}
+
+ul.footer-col-2-list > li > a {
+    padding: 6px 0;
+}
+
+h5 {
+    font-size: 11px;
+    line-height: 113.5%;
+    letter-spacing: 0.22px;
+    margin-bottom: 10px;
+}
+
+ul.footer-col-1-social > li > a {
+    padding: 0 4px;
+    margin: 0 3px;
+}
+
+.footer-row > .width25 {
+    margin-right: 0px;
+}
+
+
+
+.footer-col-3-paragraph > p {
+    line-height: 28px;
+    letter-spacing: 0.22px;
+}
+
+.footer-second-row > p {
+    padding: 10px 0 12px 0;
+}
+
+.header-col-3 {display: none;}
+
+    }
+        /*view in 375px*/
+@media (max-width:424px){
+    h1 {
+        font-size: 19px;
+        line-height: 28px;
+    }
+    
+    .banner-subtitle p {
+        line-height: 15px;
+        font-size: 8px;
+        margin: 5px auto 11px auto;
+    }
+    
+    .banner-btn > a {
+        font-size: 8px;
+        padding: 4px 3px;
+    }
+    
+    .banner-btn > a > .fa-long-arrow-right {
+        margin-left: 6px;
+    }
+    
+    .banner-text {
+        height: 219px;
+    }
+    
+    h6 {
+        font-size: 7px;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    body {
+        font-size: 11px;
+    }
+    
+    .acharya-col-2-paragraph {
+        width: 320px;
+        margin-bottom: 15px;
+    }
+    
+    .yellow-btn > a {
+        padding: 4px 5px;
+        font-size: 10px;
+    }
+    
+    
+    
+    .yellow-btn > a > .fa-long-arrow-right {
+        margin-left: 4px;
+    }
+    
+    section.acharya {
+        margin: 14px 0;
+    }
+    
+    section.pooja {
+        padding: 20px 0;
+    }
+    
+    .pooja-sub-row-col-2 {
+        width: 87%;
+    }
+    
+    section.carts {
+        margin: 25px 0 5px 0;
+    }
+    
+    .carts-row .width33 {
+        width: 100%;
+    }
+    
+    .book-text {
+        height: 124px;
+    }
+    
+    .book-title > h2 {
+        margin: 8px 0 17px 0;
+    }
+    
+    .contact-col-1-inner {
+        padding-left: 41px;
+    }
+    
+    input[placeholder], textarea[placeholder] {
+        font-size: 8px;
+        padding: 6px;
+    }
+    
+    input, textarea {
+        width: 334px;
+        margin: 4.5px 0;
+    }
+    
+    input[placeholder="City"], input[placeholder="State"] {
+        width: 44.3%;
+    }
+    
+    .footer-row {
+        padding: 15px 0;
+    }
+    
+    .footer-row > .width25 {
+        width: 100%;
+    }
+
+    .header-col-3 {display: none;}
+}
+        /*view in 320px*/
+@media (max-width:374px){
+    h1 {
+        font-size: 17px;
+        line-height: 23px;
+    }
+    
+    h6 {
+        font-size: 6px;
+        letter-spacing: 1.1px;
+    }
+    
+    .banner-subtitle p {
+        line-height: 13px;
+        font-size: 7px;
+        margin: 4px auto 8px auto;
+    }
+    
+    .banner-btn > a {
+        font-size: 7px;
+        padding: 3px 2px;
+    }
+    
+    .banner-text {
+        height: 165px;
+    }
+    
+    .acharya-col-2-paragraph {
+        width: 283px;
+        margin-bottom: 15px;
+    }
+    
+    .container {
+        max-width: 320px;
+        padding: 0;
+    }
+    
+    body {
+        font-size: 11px;
+    }
+    
+    .yellow-btn > a {
+        padding: 3px 4px;
+        font-size: 9px;
+        font-weight: 500;
+    }
+    
+    .pooja-tile {
+        margin: 8px 0 8px 0;
+        max-width: 163px;
+    }
+    
+    .pooja-paragraph {
+        max-width: 260px;
+    }
+    
+    .list-icon {
+        margin: 4px 4px 5px 0;
+    }
+    
+    .pooja-col-1-inner {
+        padding-left: 14px;
+    }
+    
+    .pooja-sub-row-col-2 {
+        width: 88%;
+    }
+    
+    .pooja-sub-row {
+        margin: 7px 0px;
+    }
+    
+    section.pooja {
+        padding: 10px 0;
+    }
+    
+    section.carts {
+        margin: 15px 0 5px 0;
+    }
+    
+    .book-title > h2 {
+        margin: 7px 0 12px 0;
+    }
+    
+    .book-text {
+        height: 110px;
+    }
+    
+    section.contact {
+        padding: 15px 0;
+    }
+    
+    .contact-col-1-inner {
+        padding-left: 15px;
+    }
+    
+    .contact-row > .width50 {
+        margin-bottom: 7px;
+    }
+    
+    input, textarea {
+        width: 295px;
+        margin: 3.5px 0;
+    }
+    
+    input[placeholder="City"], input[placeholder="State"] {
+        width: 41.3%;
+    }
+    
+    .footer-row {
+        padding-left: 15px;
+    }
+    
+    ul.footer-col-1-social > li > a {
+        padding: 0 4px;
+        margin: 0 1px;
+    }
+    
+    ul.footer-col-1-social {
+        padding-left: 7px;
+    }
+
+
+
+    .header-col-3 {display: none;}
+}
+                /* MEDIA QUERY : END */
+
+
+            /* MOBILE MENU */
+@media(min-width:768px){
+    .mobile-menu {
+        display: none;
+    }
+    
+}
+.mobile-menu {
+    position: absolute;
+    right: 45px;
+    top: 22px;
+    font-size: 31px;
+}
